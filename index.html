@@ -11,7 +11,7 @@
             integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer" />
-
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="style.css" />
         <title>proGym</title>
     </head>
@@ -19,10 +19,10 @@
         <div class="nav">
             <h2>proGym Fitness</h2>
             <ul id="item">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Classes</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <div class="icon">
                     <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                     <i class="fa-brands fa-youtube" aria-hidden="true"></i>
@@ -31,7 +31,7 @@
             </ul>
             <i id="bar" class="fa-solid fa-bars"></i>
         </div>
-        <div class="back">
+        <div id="home" class="back">
             <div class="overlay"></div>
         </div>
         <div class="mid">
@@ -43,7 +43,7 @@
             </div>
         </div>
         <div class="details">
-            <div class="one">
+            <div class="one" data-aos="fade-up">
                 <h3>New to the proGym?</h3>
                 <h6>
                     Your membership is up to two months FREE (25$ per month )
@@ -55,7 +55,7 @@
                 </p>
                 <a href="#">Become a member today</a>
             </div>
-            <div class="two">
+            <div class="two" data-aos="fade-up">
                 <h3>Working hours</h3>
                 <br />
                 <h5>Monday - Friday</h5>
@@ -67,10 +67,10 @@
             </div>
         </div>
 
-        <div class="trainer">
+        <div id="about" class="trainer">
             <div class="about">
-                <h2>Hello, we are proGym</h2>
-                <p>
+                <h2 data-aos="fade-up">Hello, we are proGym</h2>
+                <p data-aos="fade-up">
                     At GymBro, our trainers craft customized workouts for your
                     unique goals. Focusing on proper form and technique,
                     sessions are challenging and enjoyable, promoting lifelong
@@ -84,7 +84,7 @@
                     and achieve your best self.
                 </p>
             </div>
-            <div class="people">
+            <div class="people" data-aos="fade-up">
                 <div class="team1">
                     <div class="img">
                         <img src="team1.jpg" />
@@ -125,11 +125,11 @@
                 </div>
             </div>
         </div>
-        <div class="class">
-            <p class="paragraph">Get a perfect body</p>
-            <h2 class="h2">Our training classes</h2>
+        <div id="classes" class="class">
+            <p class="paragraph" data-aos="fade-up">Get a perfect body</p>
+            <h2 class="h2" data-aos="fade-up">Our training classes</h2>
             <div class="classMenu">
-                <div class="team1">
+                <div class="team1" data-aos="fade-up">
                     <div class="img">
                         <img src="class1.jpg" />
                     </div>
@@ -153,7 +153,7 @@
                     </div>
                 </div>
 
-                <div class="team1">
+                <div class="team1" data-aos="fade-up">
                     <div class="img">
                         <img src="class2.jpg" />
                     </div>
@@ -177,7 +177,7 @@
                     </div>
                 </div>
 
-                <div class="team1">
+                <div class="team1" data-aos="fade-up">
                     <div class="img">
                         <img src="class3.jpg" />
                     </div>
@@ -202,17 +202,17 @@
                 </div>
             </div>
         </div>
-        <div class="contact">
+        <div id="contact" class="contact">
             <div class="form">
-                <h2>Feel free to ask anything</h2>
-                <div class="submit">
+                <h2 data-aos="fade-up">Feel free to ask anything</h2>
+                <div class="submit" data-aos="fade-up">
                     <input type="text" name="" placeholder="Name" />
                     <input type="email" name="" placeholder="Email" />
                     <textarea placeholder="Message"></textarea>
                     <a href="#">Send Message</a>
                 </div>
             </div>
-            <div class="map">
+            <div class="map" data-aos="fade-up">
                 <h2>Where you can find us</h2>
                 <p>
                     <i class="fa-solid fa-location-dot"></i>
@@ -241,6 +241,13 @@
                 +55 (11) 98765-4321
             </p>
         </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 200,
+                duration: 1000,
+            });
+        </script>
         <script src="script.js"></script>
     </body>
 </html>
